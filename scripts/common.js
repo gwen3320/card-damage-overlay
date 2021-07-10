@@ -44,7 +44,7 @@ function addDamage(line) {
 	}
 }
 
-function getPlayer(id, name, jobId) {
+function getPlayer(id, name) {
 	if (!Object.keys(state.players).includes(id)) {
 		state.players[id] = new Player(id, name)
 	}
@@ -62,7 +62,7 @@ function updateParty(party) {
 	state.party = []
 	for (let member of party) {
 		let player = getPlayer(member.id, member.name)
-		player.changeJob(member.jobId)
+		player.changeJob(member.job)
 		state.party.push(player)
 	}
 }

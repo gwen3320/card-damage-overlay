@@ -19,11 +19,6 @@ Using ngld FFXIV Overlay Plugin create a new overlay, select custom, and paste `
 - clear cards
 
 
-## Bug fix
-
-- jobs
-
-
 ### Other
 
 - double check damage calcs

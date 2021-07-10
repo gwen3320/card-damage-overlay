@@ -6,9 +6,9 @@ class Player {
 		this.job = jobs[0];
 	}
 
-	changeJob(jobId) {
-		jobId = jobId ? jobId : 0
-		this.job = jobs[jobId]
+	changeJob(id) {
+		id = id ? id : 0
+		this.job = jobs[id]
 	}
 }
 
