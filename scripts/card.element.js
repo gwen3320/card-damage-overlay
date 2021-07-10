@@ -29,7 +29,7 @@ class CardElement {
 	update() {
 		const percent = Math.floor(100 * this.card.damage / state.cards.max);
 		const k = Math.floor(this.card.damage / 100) / 10;
-		this.children.damage.innerText = `${k}`;
+		this.children.damage.innerText = `${k}k`;
 		this.children.bar.style.width = `${percent}%`
 	}
 }
