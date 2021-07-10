@@ -11,7 +11,7 @@ class Ability {
 	}
 
 	static calcDamage(hex) {
-		if (hex.slice(-4) === "4000") {
+		if (hex.slice(-4,-3) === "4") {
 			const parts = [
 				hex.slice(0,2),
 				hex.slice(2,4),
@@ -19,7 +19,7 @@ class Ability {
 				hex.slice(6,8)
 			];
 			const bmd = (parseInt(parts[1]) - parseInt(parts[3])).toString(16);
-			return parseInt(parts[3] + parts[0] + bmd);
+			return parseInt(parts[3] + parts[0] + bmd, 16);
 		} else {
 			return parseInt(hex.slice(0,4), 16);
 		}
