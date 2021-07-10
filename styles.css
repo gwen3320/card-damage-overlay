@@ -1,0 +1,49 @@
+
+body, html {
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+.resizeHandle {
+	background-image: url(handle.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+#overlay-container {
+	background-color: #222;
+	border: 1px solid #000;
+}
+
+#card-container {
+	padding: 0px;
+}
+
+.card {
+	margin: 1px;
+	padding: 10px;
+	display: block;
+	background-color: #aaa;
+	position: relative;
+}
+
+.card span {
+	z-index: 1;
+	margin-right: 8px;
+	position: relative;
+}
+
+.card-bar {
+	display: block;
+	position: absolute;
+	background-color: #777;
+	height: 100%;
+	width: 0%;
+	left: 0px;
+	top: 0px;
+	z-index:0;
+}
