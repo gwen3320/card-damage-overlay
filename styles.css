@@ -1,6 +1,10 @@
 
 body, html {
 	margin: 0;
+	border: 1px solid;
+	background-color: #333;
+	overflow: hidden;
+	font-family: Helvetica, sans-serif;
 }
 
 html {
@@ -14,13 +18,38 @@ html {
 	box-sizing: border-box;
 }
 
-#overlay-container {
+#header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 24px;
 	background-color: #222;
-	border: 1px solid #000;
+	color: #aaa;
+	font-size: 14pt;
+	padding: 8px;
 }
 
 #card-container {
-	padding: 0px;
+	position: absolute;
+	top: 40px;
+	bottom: 30px;
+	left: 0px;
+	right: -17px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 25px;
+	color: #aaa;
+	padding: 4px 8px;
+	font-size: 14pt;
+	background-color: #222;
 }
 
 .card {
